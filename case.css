@@ -1,0 +1,129 @@
+/* ---------- case study — extends styles.css tokens ---------- */
+
+.case-hero {
+  background: linear-gradient(135deg, #3B2A20 0%, #5A3524 55%, #6B4028 100%);
+  color: var(--accent-ink);
+  padding-bottom: 44px;
+}
+.case-hero .nav { padding: 22px 0 28px; }
+.case-hero .brand { font-weight: 700; font-size: 18px; }
+.case-hero .back { font-size: 13px; }
+.case-hero .back:hover { color: var(--accent-ink) !important; }
+.case-hero .badge {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-ink);
+  margin-bottom: 18px;
+}
+.case-hero .eyebrow {
+  font-size: 13px; font-weight: 700; color: #E8B99A;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px;
+}
+.case-hero h1 {
+  font-size: clamp(30px, 4.2vw, 44px);
+  line-height: 1.15;
+  text-wrap: balance;
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+.case-hero .lede {
+  font-size: 16px; line-height: 1.6; color: #E8DCCF;
+  max-width: 640px; margin: 0 0 30px;
+}
+.case-meta {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  padding-top: 22px;
+}
+.case-meta > div { display: flex; flex-direction: column; gap: 6px; }
+.case-meta span:first-child { font-size: 11.5px; font-weight: 700; color: #C9A98E; text-transform: uppercase; letter-spacing: 0.06em; }
+.case-meta span:last-child { font-size: 13.5px; color: #F0E6DB; line-height: 1.45; }
+
+/* ---------- case sections ---------- */
+.case-section { padding: 42px 0; border-top: 1px solid var(--border); max-width: 760px; }
+.case-section.case-footer { max-width: 100%; }
+.case-section .num {
+  font-size: 12.5px; font-weight: 700; color: var(--accent-text);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px;
+}
+.case-section h2 { font-size: 25px; line-height: 1.25; margin-bottom: 14px; max-width: 620px; }
+.case-section p { color: var(--muted); font-size: 15px; line-height: 1.65; margin: 0 0 14px; }
+.case-section p:last-child { margin-bottom: 0; }
+
+/* ---------- personas ---------- */
+.persona-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 18px 0; }
+.persona-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; background: var(--panel); }
+.persona-card .name { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 19px; margin-bottom: 4px; }
+.persona-card .desc { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.persona-card .pain { font-size: 13px; color: var(--fg); line-height: 1.5; }
+.persona-card .pain strong { color: var(--accent-text); }
+
+/* ---------- callouts ---------- */
+.callout {
+  border: 1px solid var(--control-border); border-radius: 12px;
+  background: var(--surface); padding: 16px 18px;
+  font-size: 14px; color: var(--fg); line-height: 1.6; margin: 18px 0;
+}
+.callout .label { display: block; font-size: 11.5px; font-weight: 700; color: var(--accent-text); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+.callout.dashed { border-style: dashed; background: var(--panel); }
+.callout.warn { border-color: var(--accent-text); background: #F3E1D4; }
+.callout.good { border-color: var(--accent2-text); background: #EAEEDF; }
+
+/* ---------- timeline ---------- */
+.timeline { margin-top: 18px; }
+.timeline .row {
+  display: grid; grid-template-columns: 34px 1fr auto; gap: 14px; align-items: center;
+  padding: 12px 0; border-top: 1px solid var(--border);
+}
+.timeline .row:first-child { border-top: none; }
+.timeline .row .n { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 17px; color: var(--muted); }
+.timeline .row.active .n { color: var(--accent-text); }
+.timeline .row .title { font-size: 14px; font-weight: 600; }
+.timeline .row .sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.timeline .row .date { font-size: 12px; color: var(--faint); white-space: nowrap; }
+
+/* ---------- decisions ---------- */
+.decision-card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); padding: 18px 20px; margin-bottom: 14px; }
+.decision-card .title { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+.decision-card .body { font-size: 14px; color: var(--muted); line-height: 1.6; }
+.decision-card .body strong { color: var(--fg); }
+.decision-card .swatches { margin-top: 12px; }
+
+/* ---------- findings ---------- */
+.finding { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--border); }
+.finding:first-of-type { border-top: none; }
+.finding .dot { width: 9px; height: 9px; border-radius: 50%; margin-top: 5px; flex: none; }
+.finding .dot-high { background: var(--accent-text); }
+.finding .dot-low { background: var(--accent2-text); }
+.finding .text { font-size: 14px; color: var(--muted); line-height: 1.55; }
+.finding .text strong { color: var(--fg); }
+
+.applied-box {
+  border: 1px solid var(--accent2-text); background: #EAEEDF; border-radius: 12px;
+  padding: 14px 18px; font-size: 13.5px; color: var(--fg); line-height: 1.6;
+}
+.applied-box strong { color: var(--accent2-text); }
+
+/* ---------- screens grid ---------- */
+.screens-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 22px; }
+.screens-grid span {
+  border: 1px solid var(--control-border); border-radius: 999px;
+  padding: 8px 16px; font-size: 13px; color: var(--fg); background: var(--panel);
+}
+
+/* ---------- outline button ---------- */
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1.4px solid var(--control-border); border-radius: 999px;
+  padding: 11px 20px; font-size: 13.5px; font-weight: 700; color: var(--fg);
+}
+.btn-outline:hover { border-color: var(--accent-text); color: var(--accent-text); }
+
+@media (max-width: 760px) {
+  .case-meta { grid-template-columns: 1fr; }
+  .persona-grid { grid-template-columns: 1fr; }
+  .timeline .row { grid-template-columns: 26px 1fr; }
+  .timeline .row .date { grid-column: 2; }
+}

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traço e Barro — case de UX/UI | Yara Fabricia</title>
+<meta name="description" content="Case de UX/UI design: Traço e Barro, e-commerce de decoração artesanal, da pesquisa de concorrentes à UI final com auditoria real de acessibilidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case.css">
+</head>
+<body>
+
+<div class="case-hero">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" style="color:#fff">Traço e Barro</a>
+      <a class="back" href="index.html" style="color:#C9A98E">&larr; Voltar ao site</a>
+    </div>
+    <div class="badge">
+      <svg width="24" height="26" viewBox="0 0 100 110" fill="none" aria-hidden="true">
+        <path d="M30 20 L70 20 L64 48 L64 92 Q64 100 50 100 Q36 100 36 92 L36 48 Z" fill="currentColor"></path>
+        <rect x="26" y="12" width="48" height="10" rx="4" fill="currentColor"></rect>
+      </svg>
+    </div>
+    <div class="eyebrow">Case de UX/UI design</div>
+    <h1>Traço e Barro — tirando uma loja de artesanato da dependência do WhatsApp</h1>
+    <p class="lede">Projeto de estudo guiado em 18 etapas, do problema de catálogo fragmentado até uma UI em alta fidelidade com identidade visual própria e auditoria real de acessibilidade.</p>
+    <div class="case-meta">
+      <div><span>Papel</span><span>UX/UI Designer — pesquisa, arquitetura de informação, wireframes, protótipo, identidade visual, UI, auditoria WCAG</span></div>
+      <div><span>Duração</span><span>29 out – 04 nov de 2026</span></div>
+      <div><span>Método</span><span>Processo guiado em 18 etapas; pesquisa de concorrentes real, personas e testes de usabilidade simulados</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- 01 Contexto -->
+  <div class="case-section">
+    <div class="num">01 · Contexto</div>
+    <h2>Uma atividade de faculdade que virou processo completo</h2>
+    <p>O ponto de partida foi uma atividade de Arquitetura da Informação da faculdade, que pedia só um sitemap e um fluxograma. Em vez de entregar só isso, ampliei pra um processo de UX/UI completo — da pesquisa à UI final — e os dois entregáveis acadêmicos nasceram dentro dele, no lugar certo da sequência, não como anexo separado.</p>
+    <p>O problema escolhido: "Traço e Barro", uma loja própria de decoração artesanal (cerâmica, quadros e pinturas, crochê), com catálogo padrão pronto pra comprar e enviar — não feito por encomenda.</p>
+  </div>
+
+  <!-- 02 Pesquisa -->
+  <div class="case-section">
+    <div class="num">02 · Pesquisa</div>
+    <h2>O padrão do segmento não é preço — é o fluxo</h2>
+    <p>Analisei dois concorrentes reais do segmento: <strong>Wood Print</strong> (loja Nuvemshop, tem checkout completo mas catálogo repetitivo) e <strong>My Mobb</strong> (sem checkout real — fecha a compra pelo WhatsApp, feito por encomenda). Nenhum dos dois tem busca interna; os dois dependem de atendimento humano em algum ponto crítico da compra. Isso confirmou o problema: catálogos incompletos ou pouco variados geram fricção e insegurança — não é uma questão de preço mal posicionado.</p>
+
+    <div class="callout dashed">
+      <span class="label">Como ler a pesquisa a partir daqui</span>
+      A análise de concorrentes acima é observação de sites reais. A partir daqui — personas, entrevistas, testes de usabilidade — tudo é <strong>simulado</strong>, por escolha deliberada de processo de aprendizado, declarada desde o início com quem me orientou. Não houve participantes reais nesta trilha, diferente de outro case do meu portfólio onde houve.
+    </div>
+
+    <div class="persona-grid">
+      <div class="persona-card">
+        <div class="name">Mariana, 23</div>
+        <div class="desc">Decide sozinha, pelo visual. Nunca usa atendimento.</div>
+        <div class="pain"><strong>Dor:</strong> falta de escala nas fotos já quase a fez desistir de uma compra na simulação de jornada.</div>
+      </div>
+      <div class="persona-card">
+        <div class="name">Renata, 39</div>
+        <div class="desc">Pesquisa bastante antes de comprar.</div>
+        <div class="pain"><strong>Dor:</strong> precisou de atendimento pra uma dúvida técnica específica (resistência do material) — foi decisivo pra fechar a compra.</div>
+      </div>
+      <div class="persona-card">
+        <div class="name">Dona Célia, 64</div>
+        <div class="desc">Usa tecnologia normalmente — não é a "pessoa idosa que não sabe usar app".</div>
+        <div class="pain"><strong>Dor:</strong> prefere atendimento humanizado por escolha pessoal, não por dificuldade. Decidiu comprar depois de receber uma foto extra por telefone.</div>
+      </div>
+      <div class="persona-card">
+        <div class="name">Bruno, 29</div>
+        <div class="desc">À vontade com tecnologia, mas desconfia do segmento artesanal.</div>
+        <div class="pain"><strong>Dor:</strong> já recebeu peça quebrada sem solução — pra ele, política de troca visível importa mais que atendimento.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <span class="label">A contradição que mudou uma hipótese</span>
+      Mariana nunca usa atendimento. Renata e Dona Célia dependeram dele pra decidir a compra. As duas coisas são verdade ao mesmo tempo — a resposta de design não foi "colocar atendimento em destaque" nem "escondê-lo": foi deixá-lo <strong>acessível, mas opcional</strong>, pra não forçar quem, como a Mariana, nunca vai usá-lo.
+    </div>
+  </div>
+
+  <!-- 03 Processo -->
+  <div class="case-section">
+    <div class="num">03 · Processo</div>
+    <h2>18 etapas, cada uma com entregável próprio</h2>
+    <p>UX completo antes de qualquer decisão de cor ou tipografia — a identidade visual só entrou na etapa 16, depois de sitemap, fluxo, wireframes, protótipo e teste já fechados.</p>
+
+    <div class="timeline">
+      <div class="row"><div class="n">01</div><div><div class="title">Pesquisa de concorrentes</div><div class="sub">Wood Print e My Mobb — padrão real do segmento</div></div><div class="date">29/10/2026</div></div>
+      <div class="row"><div class="n">02</div><div><div class="title">Problema e hipóteses</div><div class="sub">6 hipóteses, incluindo a do atendimento opcional</div></div><div class="date">29/10/2026</div></div>
+      <div class="row"><div class="n">03</div><div><div class="title">Personas e entrevistas simuladas</div><div class="sub">4 participantes fictícios, síntese e priorização</div></div><div class="date">29/10/2026</div></div>
+      <div class="row"><div class="n">04</div><div><div class="title">Jornada e arquitetura da informação</div><div class="sub">Sitemap — entregável acadêmico #1</div></div><div class="date">29/10/2026</div></div>
+      <div class="row"><div class="n">05</div><div><div class="title">Fluxogramas</div><div class="sub">Fluxo de compra com caminhos de erro — entregável acadêmico #2</div></div><div class="date">29/10/2026</div></div>
+      <div class="row"><div class="n">06</div><div><div class="title">Wireframes baixa e média fidelidade</div><div class="sub">9 telas, 3 categorias de produto</div></div><div class="date">03/11/2026</div></div>
+      <div class="row"><div class="n">07</div><div><div class="title">Protótipo clicável + teste de usabilidade simulado</div><div class="sub">Busca, favoritos, carrinho, checkout, estados de erro</div></div><div class="date">03/11/2026</div></div>
+      <div class="row"><div class="n">08</div><div><div class="title">Iteração</div><div class="sub">4 correções direto dos achados do teste</div></div><div class="date">03/11/2026</div></div>
+      <div class="row active"><div class="n">09</div><div><div class="title">Identidade visual, UI e acessibilidade</div><div class="sub">Logo, tipografia, paleta própria + auditoria WCAG real</div></div><div class="date">04/11/2026</div></div>
+    </div>
+  </div>
+
+  <!-- 04 Decisões -->
+  <div class="case-section">
+    <div class="num">04 · Decisões</div>
+    <h2>Três decisões que valem o porquê, não só o resultado</h2>
+
+    <div class="decision-card">
+      <div class="title">Favoritos quase saiu do sitemap — e voltou por um motivo específico</div>
+      <div class="body">Na primeira versão da arquitetura da informação, cortei "Favoritos" por não ter respaldo direto de pesquisa. Revisei e pedi pra incluir de volta, com um botão na própria página de produto — critério mantido: toda decisão de escopo precisa de justificativa, inclusive quando a justificativa é "faz sentido pro comportamento já mapeado da Mariana", não só "apareceu numa entrevista".</div>
+    </div>
+
+    <div class="decision-card">
+      <div class="title">A paleta "Terra & Argila" foi corrigida por contraste real, não só por olho</div>
+      <div class="body">A paleta de referência veio pronta — eu trouxe a pesquisa de cor e tipografia, com preferência por tons terrosos e Cormorant Garamond. Depois de aplicada nas telas, medi cada combinação de cor e fundo (WCAG 2.1 AA) e encontrei 6 combinações abaixo do mínimo de contraste, incluindo <strong>dois bugs reais</strong>: uma tag "Esgotado" e um preço riscado praticamente ilegíveis (2,2:1, quando o mínimo pra texto é 4,5:1). Corrigi escurecendo só o necessário — a paleta continua reconhecível como terracota e oliva.</div>
+      <div class="swatches">
+        <div class="swatch" style="background:#B9654B; color:#FBF7F0">terracota (botão) · antes 3,91:1</div>
+        <div class="swatch" style="background:#A55840; color:#FBF7F0">terracota (botão) · depois 4,83:1</div>
+        <div class="swatch" style="background:#B6A48C; color:#594337">tag "Esgotado" · antes 2,27:1</div>
+      </div>
+    </div>
+
+    <div class="decision-card">
+      <div class="title">A logo ilustrada não entra em todo tamanho</div>
+      <div class="body">A logo (vaso, pincel e fio em loop formando o "e" de "Traço e barro") testei a 22px e ainda ficou reconhecível — mas no cabeçalho das telas do app, onde ela apareceria em torno de 34px, optei por usar só o nome em Cormorant Garamond. Entre "parecer mais de marca" e "continuar legível", fica a legibilidade.</div>
+    </div>
+  </div>
+
+  <!-- 05 Teste de usabilidade simulado -->
+  <div class="case-section">
+    <div class="num">05 · Teste de usabilidade (simulado)</div>
+    <h2>Fricção simulada de propósito — nunca "deu tudo certo"</h2>
+    <p>4 sessões fictícias com as 4 personas, cada uma testando uma tarefa real do fluxo (buscar, favoritar, finalizar compra). Os resultados foram deliberadamente variados, porque um teste simulado onde "tudo funciona perfeitamente" é sinal de simulação rasa, não de interface boa.</p>
+
+    <div class="finding"><div class="dot dot-high"></div><div class="text"><strong>Renata</strong> — sentiu falta de uma linha clara de frete no carrinho; o valor aparecia junto com o subtotal, sem separação visível.</div></div>
+    <div class="finding"><div class="dot dot-high"></div><div class="text"><strong>Bruno</strong> — não encontrou a política de troca até rolar a tela inteira da página de produto; pra ele, que já teve peça quebrada sem solução, isso quase bastou pra desistir.</div></div>
+    <div class="finding"><div class="dot dot-low"></div><div class="text"><strong>Mariana</strong> — buscou um produto que não existe no catálogo ("luminária") e caiu numa tela de busca sem resultado, sem nenhuma sugestão do que tentar em seguida.</div></div>
+    <div class="finding"><div class="dot dot-low"></div><div class="text"><strong>Dona Célia</strong> — completou a tarefa sem dificuldade, mas comentou que gostaria de ver avaliação de outros clientes mais perto do preço, não só no fim da página.</div></div>
+
+    <div class="applied-box" style="margin-top:16px"><strong>Aplicado no protótipo:</strong> frete separado do subtotal com linha própria no carrinho; link de troca reposicionado entre as especificações e o botão de comprar, com ícone; 3 sugestões de categoria na busca sem resultado; vitrine "você também pode gostar" na tela de produto esgotado.</div>
+  </div>
+
+  <!-- 06 Identidade e UI -->
+  <div class="case-section">
+    <div class="num">06 · Identidade visual e UI</div>
+    <h2>Uma identidade que eu trouxe pronta, aplicada com critério</h2>
+    <p>Diferente de um projeto onde a marca nasce durante o processo, aqui a logo, a paleta e a tipografia já vieram definidas por mim — o trabalho de UI foi decidir <em>como</em> aplicar isso com consistência, não decidir <em>o quê</em> usar.</p>
+    <div class="swatches">
+      <div class="swatch" style="background:#F7F1E7; color:#594337; border:1px solid #D9C6A8">Creme · fundo · 60%</div>
+      <div class="swatch" style="background:#DCC6A5; color:#594337">Areia · cards/campos · 30%</div>
+      <div class="swatch" style="background:#A55840; color:#FBF7F0">Terracota · ação principal · 10%</div>
+      <div class="swatch" style="background:#6A7150; color:#FBF7F0">Verde oliva · seleção secundária</div>
+      <div class="swatch" style="background:#594337; color:#FBF7F0">Marrom · texto</div>
+    </div>
+    <p style="font-size:14px">Tipografia: <strong>Cormorant Garamond</strong> só em títulos grandes (nome de produto, confirmação de pedido), <strong>DM Sans</strong> em tudo funcional — preço, botão, campo — pra proteger a legibilidade em telas pequenas, especialmente pensando na persona Dona Célia.</p>
+    <a class="btn-outline" href="https://claude.ai/artifact/PLLJysVSJAo4ybvagofRfu" target="_blank" rel="noopener">
+      Ver a UI completa
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
+    </a>
+  </div>
+
+  <!-- 07 Acessibilidade -->
+  <div class="case-section">
+    <div class="num">07 · Acessibilidade</div>
+    <h2>Medir, não só olhar</h2>
+    <p>Depois da UI aplicada, medi o contraste real (WCAG 2.1 AA) de cada combinação de cor usada — não só "parece legível". O resultado: 6 combinações da paleta original ficavam abaixo do mínimo de 4,5:1 pra texto, e duas delas eram erros reais escondidos numa paleta que, visualmente, parecia funcionar.</p>
+    <div class="callout warn">
+      Uma tag "Esgotado" e um preço promocional riscado estavam em 2,2:1 de contraste — o tipo de problema que só aparece quando se mede. Os dois foram corrigidos escurecendo a cor de fundo, sem trocar a paleta.
+    </div>
+    <p style="font-size:14px">Também revisei área de toque (o botão de favoritar foi de 22px pra 28px — abaixo do mínimo de 24px da WCAG 2.5.8) e documentei, com honestidade, o que um mockup estático não permite testar de verdade: navegação por teclado e leitor de tela só são verificáveis em código real, com elementos semânticos.</p>
+    <a class="btn-outline" href="https://claude.ai/artifact/LHyGnjRGKRpmTtoUjchzPi" target="_blank" rel="noopener">
+      Ver a auditoria completa
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
+    </a>
+  </div>
+
+  <!-- 08 Resultado -->
+  <div class="case-section">
+    <div class="num">08 · Resultado</div>
+    <h2>O protótipo, de ponta a ponta</h2>
+    <p>9 telas principais e 5 estados de erro/variação, navegáveis do zero até a confirmação do pedido.</p>
+    <div class="screens-grid">
+      <span>Início</span>
+      <span>Cerâmica</span>
+      <span>Quadros e pinturas</span>
+      <span>Crochê</span>
+      <span>Produto</span>
+      <span>Carrinho</span>
+      <span>Checkout</span>
+      <span>Confirmação</span>
+      <span>Minha conta</span>
+    </div>
+    <a class="btn-outline" href="https://claude.ai/artifact/R7Kqq9VqkYi5jJmd5RT3DB" target="_blank" rel="noopener">
+      Ver o protótipo navegável
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
+    </a>
+  </div>
+
+  <!-- 09 Honestidade -->
+  <div class="case-section case-footer">
+    <div class="num">09 · Honestidade</div>
+    <h2>O que esse projeto não é</h2>
+    <p>Sem isso, o case venderia mais do que o trabalho entrega:</p>
+    <ul style="max-width:680px; font-size:14px; line-height:1.6; color:var(--muted); padding-left:20px">
+      <li>Personas, entrevistas e testes de usabilidade são simulados — não houve participantes reais nesta trilha, só a análise de concorrentes (etapa 01) é dado de mercado real.</li>
+      <li>As fotos de produto no protótipo e na UI são, em parte, reais — fornecidas posteriormente pela autora para os itens já fotografados; os demais seguem como placeholder.</li>
+      <li>Não há backend, checkout ou pagamento funcionando de verdade — é um protótipo de fidelidade de interface, não um produto em produção.</li>
+      <li>Navegação por teclado e leitor de tela não foram testadas de verdade — só são verificáveis em código real (ver seção 07).</li>
+    </ul>
+  </div>
+
+  <footer style="padding: 36px 0 48px; border-top: 1px solid var(--border);">
+    <div class="bottom-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; font-size:13px; color:var(--faint);">
+      <span>&copy; 2026 Yara Fabricia</span>
+      <a class="inline" style="color:var(--accent-text); font-weight:600" href="index.html">&larr; Voltar ao site do Traço e Barro</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
